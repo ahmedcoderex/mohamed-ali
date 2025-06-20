@@ -1,0 +1,161 @@
+/* Contact */
+
+      .contact-sec {
+        position: relative;
+        background-image: url(./5893448244493666854.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-sec::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.7;
+      }
+
+      .contact-sec .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: calc(
+          100vh - 53px
+        ); /* Assuming 53px is footer height or similar */
+        z-index: 9999; /* Content above ::before */
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative; /* Added for z-index to work properly with ::before */
+      }
+
+      @media (max-width: 789px) {
+        .contact-sec .container {
+          flex-direction: column;
+          gap: 50px;
+        }
+      }
+
+      .contact-sec .content h2 {
+        font-size: 3em;
+        font-weight: 500;
+        padding: 20px 0;
+        padding-left: 10px;
+        position: relative;
+        color: goldenrod;
+      }
+
+      .contact-sec .content h2::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 70%;
+        top: 15%;
+        left: 0;
+        background-color: goldenrod;
+      }
+
+      .contact-sec .content p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 70px;
+      }
+
+      .contact-sec .content .input-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .contact-sec .content .input-form input {
+        margin-bottom: 20px;
+        font-size: 30px;
+        padding: 5px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .contact-sec .content .input-form button {
+        font-size: 30px;
+        padding: 5px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: goldenrod;
+        transition: 0.6s ease;
+        color: #fff;
+      }
+
+      .contact-sec .content .input-form button:hover {
+        background-color: #000;
+        color: goldenrod;
+      }
+
+      .contact-sec .info {
+        position: relative;
+        right: -16%;
+        padding: 30px;
+        color: #fff;
+        z-index: 99999; /* Above ::before and other elements if necessary */
+        background-color: #0b0b0b;
+        overflow: hidden; /* To contain pseudo-elements */
+      }
+
+      .contact-sec .info::before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background-color: goldenrod;
+        left: -42px;
+        top: -42px;
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+        z-index: -2; /* Behind info content */
+      }
+
+      .contact-sec .info::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background-color: goldenrod;
+        right: 25%;
+        bottom: -50px;
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+        z-index: -2; /* Behind info content */
+      }
+
+      .contact-sec .info h3 {
+        font-size: 2em;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+
+      .contact-sec .info div {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .contact-sec .info i {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+
+      @media (max-width: 789px) {
+        .contact-sec .info {
+          width: 100%;
+          text-align: center;
+          right: 0;
+        }
+      }
+      /*// Contact //*/

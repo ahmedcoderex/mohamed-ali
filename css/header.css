@@ -1,0 +1,124 @@
+/* Header */
+
+.header {
+  color: #fff;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container h5 a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: goldenrod;
+  cursor: pointer;
+  animation: logo 2s ease;
+  position: relative;
+}
+
+@keyframes logo {
+  from {
+    left: -50px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.header .nav {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 0 0 10px #fff;
+  transition: 0.6s ease;
+  animation: navigation 2s ease;
+}
+
+@keyframes navigation {
+  from {
+    top: -50px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.header .nav:hover {
+  scale: 1.03;
+  box-shadow: 0 0 15px #fff;
+}
+
+@media (max-width: 991px) {
+  .header .nav {
+    display: none !important;
+  }
+}
+
+.header .nav a:not(.active) {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  transition: 0.4s ease;
+}
+
+.active {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  background-color: goldenrod;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.header .nav a:hover {
+  color: #fff;
+  background-color: goldenrod;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.header .header-btn {
+  border-radius: 10px;
+  background-color: goldenrod;
+  font-size: 20px;
+  padding: 5px;
+  transition: 0.6s ease;
+  cursor: pointer;
+  animation: header-btn 2s ease;
+  position: relative;
+}
+
+@keyframes header-btn {
+  from {
+    right: -50px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.header .header-btn:hover {
+  color: #000;
+  /* background-color: #fff; */
+  scale: 1.04;
+  box-shadow: 0 0 5px goldenrod;
+}
+/* End Header */

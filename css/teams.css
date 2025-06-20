@@ -1,0 +1,111 @@
+/* teams */
+
+.teams-sec {
+  /* background-image: url(https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGhvdG9ncmFwaGVyfGVufDB8fDB8fHww); */
+  /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: #030409;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  padding-top: 50px; /* Added padding */
+  padding-bottom: 50px; /* Added padding */
+}
+
+.teams-sec .Header-section {
+  /* Style for the team section header */
+  color: #fff;
+  padding-bottom: 50px; /* Space below header */
+  margin-bottom: 30px; /* More space before cards */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards .card {
+  background-color: #151515;
+  text-align: center;
+  border-radius: 20px;
+  color: #fff;
+  padding: 40px;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.cards .card:hover {
+  scale: 1.03;
+  box-shadow: 0 0 10px goldenrod;
+}
+
+@media(max-width: 664px){
+  .cards .card{
+    padding: 20px 10px !important;
+    scale: .9 !important;
+  }
+  .cards .card:hover{
+    scale: 1 !important;
+  }
+
+  /* .cards .card img{
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .cards .card h2{
+    font-size: 1.5em !important;
+  }
+  .cards .card p{
+    font-size: 1.1em !important;
+  }
+  .cards .card .team-btn{
+    font-size: 1.2em !important;
+  } */
+}
+
+.cards .card img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 2px solid goldenrod;
+  box-shadow: 0 0 10px goldenrod;
+}
+
+.cards .card h2 {
+  font-size: 2.4em;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.cards .card p {
+  max-width: 300px;
+  font-size: 1.5em;
+  word-spacing: 2px;
+  line-height: 40px;
+}
+
+.cards .card .team-btn {
+  display: block;
+  background-color: goldenrod;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.6s ease;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cards .card .team-btn:hover {
+  color: #000;
+  scale: 1.1;
+}
+
+/*// teams //*/

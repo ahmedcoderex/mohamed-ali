@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Archivo Black", sans-serif;
+  background-color: #000;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+/* Global Rules */
+
+.Header-section {
+  position: relative;
+  z-index: 99999;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 600;
+  padding: 50px;
+  color: #fff;
+}
+
+@media(max-width: 664px){
+  .Header-section{
+    font-size: 3em;
+  }
+}
